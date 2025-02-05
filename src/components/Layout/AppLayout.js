@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import LeftSidebarMenu from "./LeftSidebarMenu";
 import TopNavbar from "./TopNavbar";
+import ScrollToTop from "./ScrollToTop";
 
 const AppLayout = ({ children, toggleActive }) => {
   const { pathname } = useLocation();
@@ -27,7 +28,10 @@ const AppLayout = ({ children, toggleActive }) => {
           <LeftSidebarMenu toggleActive={toggleActive} />
         </>
       )}
-      <div className="main-content">{children}</div>
+      <div className="main-content">
+        <ScrollToTop />  
+          {children}
+      </div>
     </>
   );
 };

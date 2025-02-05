@@ -9,7 +9,8 @@ const ProtectedRoute = ({ children }) => {
     return <div>Caricamento...</div>; // Mostra un indicatore di caricamento
   }
 
-  return user ? children : <Navigate to="/login" />;
+  return children;
+  // return user ? children : <Navigate to="/login" />;
 };
 
 export default ProtectedRoute;

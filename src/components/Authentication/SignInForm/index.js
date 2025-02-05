@@ -270,12 +270,12 @@ const SignInForm = () => {
                       }}
                     >
                       <i className="material-symbols-outlined mr-5">login</i>
-                      Sign In
+                      Accedi
                     </Button>
                   </Box>
 
                   <Typography>
-                    Don’t have an account.{" "}
+                    Non hai ancora un account?{" "}
                     <Link
                       to="/signup/"
                       className="text-primary"
@@ -283,7 +283,7 @@ const SignInForm = () => {
                         fontWeight: "500",
                       }}
                     >
-                      Sign Up
+                      Registrati
                     </Link>
                   </Typography>
                 </Box>

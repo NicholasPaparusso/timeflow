@@ -369,7 +369,7 @@ const TeamMembers = () => {
           </Box>
 
           <Box>
-            <Link to="/users/add-user">
+            <Link to="/users/aggiungi">
               <Button
                 variant="outlined"
                 sx={{
@@ -381,8 +381,8 @@ const TeamMembers = () => {
                 }}
                 color="primary"
               >
-                <AddIcon sx={{ position: "relative", top: "-1px" }} /> Add New
-                Member
+                <AddIcon sx={{ position: "relative", top: "-1px" }} /> 
+                Aggiungi Utente
               </Button>
             </Link>
           </Box>

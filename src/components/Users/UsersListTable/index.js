@@ -363,13 +363,13 @@ const UsersListTable = () => {
               <input
                 type="text"
                 className="t-input"
-                placeholder="Search here..."
+                placeholder="Cerca qui..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </Box>
 
-            <Link to="/users/add-user">
+            <Link to="/users/aggiungi">
               <Button
                 variant="outlined"
                 sx={{
@@ -381,8 +381,8 @@ const UsersListTable = () => {
                 }}
                 color="primary"
               >
-                <AddIcon sx={{ position: "relative", top: "-1px" }} /> Add New
-                User
+                <AddIcon sx={{ position: "relative", top: "-1px" }} /> 
+                Aggiungi Utente
               </Button>
             </Link>
           </Box>

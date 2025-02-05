@@ -6,7 +6,10 @@ import AppLayout from "./components/Layout/AppLayout";
 
 // Pagine
 import Home from "./pages/Home";
-
+//User
+import Users from "./pages/users";
+import UsersList from "./pages/users/UsersList";
+import AddUsers from "./pages/users/AddUsers";
 //Autenticazione
 import SignIn from "./pages/authentication/SignIn";
 import SignUp from "./pages/authentication/SignUp";
@@ -27,6 +30,7 @@ const App = () => {
 
   return (
     <AuthProvider>
+    <div className={`main-wrapper-content ${active ? "active" : ""}`}>
       <Router>
         <AppLayout toggleActive={toggleActive}>
           <Routes>
@@ -50,9 +54,40 @@ const App = () => {
                 </ProtectedRoute>
               }
             />
+
+            {/*User*/}
+            <Route
+              path="/users/"
+              element={
+                <ProtectedRoute>
+                  <Users />
+                </ProtectedRoute>
+              }
+            />
+
+            <Route
+              path="/users/riepilogo"
+              element={
+                <ProtectedRoute>
+                  <UsersList />
+                </ProtectedRoute>
+              }
+            />
+
+
+            <Route
+              path="/users/aggiungi"
+              element={
+                <ProtectedRoute>
+                  <AddUsers />
+                </ProtectedRoute>
+              }
+            />
+            {/*User*/}
           </Routes>
         </AppLayout>
       </Router>
+      </div>
     </AuthProvider>
   );
 };

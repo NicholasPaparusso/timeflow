@@ -61,9 +61,9 @@ const LeftSidebarMenu = ({ toggleActive }) => {
     <Box className="leftSidebarDark">
       <Box className="left-sidebar-menu">
         <Box className="logo">
-          <Link to="/dashboard/ecommerce/">
+          <Link to="/">
             <img
-              src="icon.png"
+              src="/icon.png"
               alt="logo-icon"
               width={26}
               height={26}
